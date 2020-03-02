@@ -1,0 +1,8 @@
+unset key
+set term png size 1400,700
+set out "koch.png"
+
+set xra [0.0:1.0]
+set yra [0:.3]
+
+plot 'koch.pts' with dots
