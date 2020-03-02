@@ -1,0 +1,7 @@
+unset key
+set term png size 1000,400
+set out "broc.png"
+set yra [0:0.4]
+set xra [0:1.0]
+
+plot 'broc.pts' with dots

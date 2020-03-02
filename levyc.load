@@ -1,0 +1,7 @@
+unset key
+set term png size 800,800
+set out "levyc.png"
+set yra [-.6:1.6]
+set xra [-.6:1.6]
+
+plot 'levyc.pts' with dots
