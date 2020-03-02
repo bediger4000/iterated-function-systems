@@ -1,0 +1,8 @@
+unset key
+set term png size 1400,700
+set out "czoom.png"
+
+set xra [.2:.4]
+set yra [.2:.5]
+
+plot 'czoom.pts' with dots
