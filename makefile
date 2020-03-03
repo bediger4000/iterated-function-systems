@@ -1,3 +1,5 @@
+all: levyc.png broc.png koch.png cesaro.png
+
 levyc.png: curve levyc.load
 	./curve 15 .5 .5 > levyc.pts
 	gnuplot < levyc.load
