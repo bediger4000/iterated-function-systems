@@ -31,3 +31,4 @@ clean:
 	-rm -rf broc.pts broc.png
 	-rm -rf cesaro.pts cesaro.png
 	-rm -rf czoom.pts czoom.png
+	-rm -rf koch.pts koch.png
