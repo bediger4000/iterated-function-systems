@@ -46,3 +46,28 @@ The real and imaginary parts of A cause different curves.
 ![Cesaro Curve](c.png?raw=true)
 
 Example Cesaro Curve
+
+## BONUS GIF OUTPUT
+
+The file `cgif.go` is pretty much the same as `curve.go`,
+only it puts a GIF image on stdout when it's done.
+To make the Cesaro curve from above:
+
+    $ go build cgif.go
+    $ ./cgif 17 .3 .3 > cesaro.gif
+
+The output isn't great, but it is GIF format output.
+
+## BONUS GIF MOVIE OUTPUT
+
+The file `cgifframes.go` produces a GIF-format "movie" on stdout.
+
+    $ go build cgifframes.go
+	$ ./cgifframes > movie.gif
+
+`cgifframes.go` is inflexible: all parameters like image size,
+the A imaginary number constant, etc, are hardcoded.
+Right now, it produces a movie where the A-constant progresses
+from  0.15 + 0.37i to 0.90 + 0.37i, in 0.001-increments.
+Only the real part of the complex number changes.
+
